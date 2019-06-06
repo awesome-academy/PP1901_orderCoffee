@@ -15,7 +15,7 @@ class CreateInvoiceTable extends Migration
     {
         Schema::create('invoice', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->dateTIME('buydate');
+            $table->date('buydate');
             $table->integer('price_id');
             $table->integer('name_id');
             $table->string('quantity');
